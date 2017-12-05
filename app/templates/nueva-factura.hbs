@@ -1,0 +1,14 @@
+<br><br>
+Fecha: {{input type="date" value=model.fecha}}
+folio: {{input type="text" value=model.folio}}
+serie: {{input type="text" value=model.serie}}
+formaPago: {{input type="text" value=model.formaPago}}
+<br><br>
+<button {{action 'nuevoConcepto'}}>Añadir concepto</button>
+
+{{#each model.conceptos as |concepto|}}
+  {{form-concepto concepto=concepto}}
+{{/each}}
+
+<br><br>
+<button name="button" {{action 'guardar'}}>Guardar</button>

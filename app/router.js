@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('lista-facturas');
+  this.route('nueva-factura');
 });
 
 export default Router;

@@ -30,6 +30,15 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.firebase = {
+      apiKey: "AIzaSyCWwBf3CRo_pBSYtt6OoU-Rw0hQwTxqiJI",
+      authDomain: "practica-ad873.firebaseapp.com",
+      databaseURL: "https://practica-ad873.firebaseio.com",
+      projectId: "practica-ad873",
+      storageBucket: "",
+      messagingSenderId: "1015263221571"
+    }
   }
 
   if (environment === 'test') {
