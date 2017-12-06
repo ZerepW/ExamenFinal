@@ -1,7 +1,22 @@
-<h1>Practica</h1>
+<html>
+  <head>
+    <title>Examen Final</title>
+  </head>
+  <body class="" style="height:1500px; background-color:#eaeaea">
+    <div class="container" style="height:100%;padding:10px;background-color:#fff">
+    <h1>Facturas</h1>
 
-{{#link-to 'nueva-factura'}}
-  Crear Factura
-{{/link-to}}
 
-{{outlet}}
+    {{#link-to 'nueva-factura'}}
+      <button class="btn btn-success">Crear Factura</button>
+    {{/link-to}}
+
+    {{#link-to 'lista-facturas'}}
+      <button class="btn btn-primary">Lista de Facturas</button>
+    {{/link-to}}
+
+
+    {{outlet}}
+    </div>
+  </body>
+</html>

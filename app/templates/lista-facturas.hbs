@@ -1,12 +1,16 @@
-<table>
-  <tr>
-    <td>Factura</td>
-    <td>serie</td>
-    <td>folio</td>
-    <td>fecha</td>
-    <td>subtotal</td>
-    <td>total</td>
-  </tr>
+<br><br><br><br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Serie</th>
+      <th scope="col">Folio</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">SubTotal</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
   {{#each model as |factura|}}
   <tr>
     <td>{{factura.id}}</td>
@@ -17,4 +21,7 @@
     <td>{{factura.total}}</td>
   </tr>
   {{/each}}
-</table>
+  </tbody>
+</table><br><br>
+<center><h2>¡Sigue creando Facturas!</h2></center>
+<div style="height:2000px;"></div>

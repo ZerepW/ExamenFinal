@@ -22,7 +22,4 @@ export default DS.Model.extend({
       });
       return total;
     }),
-  // subtotal: Ember.computed('conceptos.importe', function(){
-  //
-  // }) Controller
 });

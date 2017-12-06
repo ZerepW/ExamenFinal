@@ -1,14 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.min.css">
+
 <br><br>
-Fecha: {{input type="date" value=model.fecha}}
-folio: {{input type="text" value=model.folio}}
-serie: {{input type="text" value=model.serie}}
-formaPago: {{input type="text" value=model.formaPago}}
+<div class="row">
+  <div class="col col-sm-6">Folio: {{input type="text" class="form-control" value=model.folio}}</div>
+  <div class="col col-sm-6">Serie: {{input type="text" class="form-control " value=model.serie}}</div>
+</div><br>
+Fecha: {{input type="date" class="form-control" value=model.fecha}}<br>
+Forma de Pago: {{input type="text" class="form-control" value=model.formaPago}}<br>
 <br><br>
-<button {{action 'nuevoConcepto'}}>Añadir concepto</button>
+<button class="btn-lg btn-success" {{action 'nuevoConcepto'}}>Añadir concepto</button>
 
 {{#each model.conceptos as |concepto|}}
   {{form-concepto concepto=concepto}}
 {{/each}}
 
 <br><br>
-<button name="button" {{action 'guardar'}}>Guardar</button>
+<center><button class="btn-lg btn-primary" name="button" {{action 'guardar'}}>Guardar</button></center>

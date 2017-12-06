@@ -1,8 +1,10 @@
 
-descripcion: {{textarea type="text" value=concepto.descripcion}}
-cantidad: {{input type="text" value=concepto.cantidad}}
-precio: {{input type="text" value=concepto.precio}}
-descuento: {{input type="text" value=concepto.descuento}}
+Descripcion: {{textarea type="text" class="form-control" value=concepto.descripcion}}
+Cantidad: {{input type="number" class="form-control" value=concepto.cantidad}}
+Precio: {{input type="number" class="form-control" value=concepto.precio}}
+Descuento: {{input type="number" class="form-control" value=concepto.descuento}}
 
-<p>importe: {{concepto.importe}} </p>
-<p>Total: {{concepto.total}}</p>
+<div class="float-right">
+<p class="" >Importe: {{concepto.importe}} </p>
+<b><p  class="" >TOTAL: {{concepto.total}}</p><br></b>
+</div>

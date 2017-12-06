@@ -32,12 +32,12 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
 
     ENV.firebase = {
-      apiKey: "AIzaSyCWwBf3CRo_pBSYtt6OoU-Rw0hQwTxqiJI",
-      authDomain: "practica-ad873.firebaseapp.com",
-      databaseURL: "https://practica-ad873.firebaseio.com",
-      projectId: "practica-ad873",
-      storageBucket: "",
-      messagingSenderId: "1015263221571"
+      apiKey: "AIzaSyC4bD4BRFSKvXAZbgKAf7hcC1W-LjBxpfg",
+    authDomain: "final-3df18.firebaseapp.com",
+    databaseURL: "https://final-3df18.firebaseio.com",
+    projectId: "final-3df18",
+    storageBucket: "final-3df18.appspot.com",
+    messagingSenderId: "1081761911940"
     }
   }
 

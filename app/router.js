@@ -7,7 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('lista-facturas');
+  
+  this.route('lista-facturas',{path:'/'});
   this.route('nueva-factura');
 });
 
